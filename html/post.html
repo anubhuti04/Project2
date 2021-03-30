@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+
+    <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="../Style/post.css">
+</head>
+
+<body>
+
+    <!-- Sign up Model -->
+    <div class="signUp">
+        <div class="signUpForm">
+            <span class="signUpClose">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+
+            <form>
+                <p>Full Name</p>
+                <input type="text" placeholder="Enter Full Name" required>
+
+                <p>Username</p>
+                <input type="text" placeholder="Enter Username" required>
+
+                <p>Password</p>
+                <input type="password" placeholder="Enter Password" required>
+
+                <p> Confirm Password</p>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <input type="submit" class="suBtn" value="Sign up">
+            </form>
+
+        </div>
+    </div>
+
+
+    <!--Sign in page-->
+    <div class="signIn">
+        <div class="signInForm">
+            <span class="signInClose">&times;</span>
+            <h1>Welcome Back!</h1>
+            <hr>
+
+            <form>
+                <p>Username</p>
+                <input type="text" placeholder="Enter Username" required>
+
+                <p>Password</p>
+                <input type="password" placeholder="Enter Password" required>
+
+                <input type="submit" class="siBtn" value="Submit">
+
+            </form>
+            <h3 class="notAMember">Not a member?<a class="ggwp"><span> Sign up </span></a></h3>
+
+        </div>
+    </div>
+
+    <!--Logo-->
+    <div class="header">
+        <button class="topinButtons" id="btn">Sign Up</button>
+        <button class="topinButtons">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore, Imagine, Create</p>
+    </div>
+
+
+    <div class="container">
+        <h1 id="containerHead">The legacy of Jimi Hendrix</h1>
+        <textarea type="text" id="changes"></textarea>
+        <div class="editName">
+            <p id="author">JIMI</p>
+            <button id="edit" onclick="editFunction()">Edit <img src="https://img.icons8.com/metro/15/ffffff/edit-property.png"/></button>
+            <!--On changes made the button shall update-->
+            <button id="save" onclick="saveFunction()">Save <img src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png"/></button>
+        </div>
+        <p id="sample_Body">
+            Hard work is the most important key to success. Achievements without hard work are impossible. 
+An idle person can never gain anything if they sit and wait for a better opportunity to come. 
+The person who is working hard is able to gain success and happiness in life. Nothing is easy to be achieved in life without doing any hard work.
+The constant vigilance and preparedness to work is the price we have to pay for success in life. Work is a privilege and a pleasure, the idleness is a luxury that no one can afford. Man is born to work and prosper in life. He like steel shines in use and rusts in rest. The work is worship. The man of action acts in the living present. There is no tomorrow for him. He makes the best of the time. Life is full of strife. It is the action, activity of law of nature.
+
+
+        </p>
+        <textarea id="sampleEdit"></textarea>
+        <!--like button-->
+        <button class="likeBtn" onclick="likeFunction()"><img src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png"/>    Like</button>
+        <p id="counter">Be first one to like this!</p>
+        <textarea id="comment" placeholder="leave a comment..."></textarea><br>
+        <!--Comment button-->
+        <button id="comments" onclick="postFunction()">Comment</button>
+        <h3 id="header">ALL Comments</h3>
+        <div id="allComments">
+
+        </div>
+    </div>
+
+    <script src="../Script/post.js"></script>
+    <script src="../Script/header.js"></script>
+</body>
+
+</html>
